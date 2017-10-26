@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  img_name: MyString
+  boy_name: MyString
+  girl_name: MyString
+
+two:
+  img_name: MyString
+  boy_name: MyString
+  girl_name: MyString

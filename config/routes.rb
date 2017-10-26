@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
 
+  get 'photos/new' => 'pthotos#new'
+  get
+
   get '/' => 'static_pages#top'
   get '/about' => 'static_pages#about'
 
