@@ -1,6 +1,9 @@
 class PhotosController < ApplicationController
+
+  require 'emotion'
   def index
     @photo = Photo.last
+    @love = lovePower(@photo.boy_img_name, @photo.girl_img_name)
   end
 
   def new
@@ -20,7 +23,4 @@ class PhotosController < ApplicationController
       render("/photos/new")
     end
   end
-
-
-
 end
