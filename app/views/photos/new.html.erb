@@ -1,2 +1,7 @@
-<h1>Photos#new</h1>
-<p>Find me in app/views/photos/new.html.erb</p>
+<%= form_tag("/photos/create", {multipart:true}) do %>
+  <input name="boy_name" placeholder="男の子の名前を入力">
+  <input name="boy_img_name" placeholder="画像URLを入力">
+  <input name="girl_name" placeholder="女の子名前を入力">
+  <input name="girl_img_name" placeholder="画像URLを入力">
+  <input type="submit" value="投稿">
+<% end %>
