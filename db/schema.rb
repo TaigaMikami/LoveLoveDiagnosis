@@ -13,12 +13,11 @@
 ActiveRecord::Schema.define(version: 20171026095514) do
 
   create_table "photos", force: :cascade do |t|
-    t.string   "boy_img_name"
-    t.string   "girl_img_name"
     t.string   "boy_name"
     t.string   "girl_name"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.string   "two_shot"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

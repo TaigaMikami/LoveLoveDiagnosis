@@ -1,3 +1,30 @@
 // Place all the styles related to the Photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html{
+
+  background-image: url("/back.jpg");
+}
+
+.jumbotron{
+  list-style-type: none;
+  color: white !important;
+  text-align: center;
+  background-image: url("/back.jpg");
+  .display-3{
+    margin: 0 auto;
+  }
+  .new-top{
+    display: flex;
+    font-size: 40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: inherit;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,5 +1,7 @@
 require 'net/http'
 require 'json'
+require 'open-uri'
+require 'FileUtils'
 
 def azure(url_name='')
   # NOTE: You must use the same region in your REST call as you used to obtain your subscription keys.
@@ -23,16 +25,30 @@ def azure(url_name='')
 
   obj = JSON.load(response.body)
   # obj = response.body
+  get_image(url_name)
+  lovePower1 = obj[0]["scores"]["happiness"]
+  lovePower2 = obj[1]["scores"]["happiness"]
+  puts lovePower1
+  puts lovePower2
 
-  return obj[0]["scores"]["happiness"]
+  return (lovePower1 + lovePower2)/2*100
 end
 
 # puts azure.class
+def get_image(url)
+  # fileName = File.basename(url)
+  fileName = "public/download_img/#{File.basename(url)}"
 
-def lovePower(boy_url='', girl_url='')
-  boy_love_power = azure(boy_url)
-  girl_love_power = azure(girl_url)
-  puts boy_love_power
-  puts girl_love_power
-  return (boy_love_power + girl_love_power) * 100 / 200 * 100
+  open(fileName, 'wb') do |output|     #※１
+    open(url) do |data|
+      output.write(data.read)          #※２
+    end
+  end
 end
+
+
+# def get_image(url)
+#   open("../../public/download_img/#{File.basename(url)}", 'wb') do |file|
+#     file.puts(Net::HTTP.get_response(URI.parse(url)).body)
+#   end
+# end
