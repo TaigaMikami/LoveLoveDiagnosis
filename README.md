@@ -1,24 +1,21 @@
-# README
+# LoveLoveDiagnosis
+彼女とのツーショット写真を撮ったあなた…。彼女は本当に今日のデート楽しかったのか…？
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+好きな子とツーショット撮ったあなた…。本当はその子も君のことが好きなのかもしれない。
 
-Things you may want to cover:
+気になっている子とツーショットを撮ったあなた…。その気持ちはなんなのか！？
 
-* Ruby version
+そんな人たちへ人工知能で相手の本当の気持ちを知りたくないですか？
 
-* System dependencies
+## 概要
+MicrosoftのAzureを用いたアプリケーション。
+好きな相手との相性がわかります。
 
-* Configuration
+## 環境
+Ruby 2.3.3
+Ruby on Rails 5.0.6
+HTML
+CSS
+Azure Emotion API
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
