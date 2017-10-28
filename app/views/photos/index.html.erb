@@ -1,8 +1,8 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <img src="<%= "/download_img/#{@two_shot}" %>" width=300 height=300>
     <h1 class="display-3">LoveLoveDiagnosis</h1>
-    <p class="lead"><%= @photo.boy_name %><%= @photo.girl_name %></p>
+    <img src="<%= "/download_img/#{@two_shot}" %>" width=300 height=300>
+    <h3><%= @photo.boy_name %>と<%= @photo.girl_name %>の相性は</h3>
     <h2><%= @love %>%</h2>
     <br>
     <%= @photo.two_shot %>

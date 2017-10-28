@@ -18,13 +18,18 @@ html{
     margin: 0 auto;
     // color: black !important;
   }
+
+}
+
+.menu{
+  display: flex;
   .new-top{
-    display: flex;
+    flex-direction:row;
     font-size: 20px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: inherit;
+    background-color: inherit !important;
     align-items: center;
     justify-content: center;
   }
