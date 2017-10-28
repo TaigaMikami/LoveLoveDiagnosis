@@ -31,7 +31,7 @@ def azure(url_name='')
   puts lovePower1
   puts lovePower2
 
-  return (lovePower1 + lovePower2)/2*100
+  return ((lovePower1 + lovePower2)/2*100).floor
 end
 
 # puts azure.class
