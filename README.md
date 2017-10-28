@@ -12,6 +12,8 @@ MicrosoftのAzureを用いたアプリケーション。
 
 好きな相手との相性がわかります。
 
+![5](https://user-images.githubusercontent.com/25325947/32135077-e8118de0-bc33-11e7-97cf-cbd57729748d.png)
+
 ## 環境
 - Ruby 2.3.3
 
