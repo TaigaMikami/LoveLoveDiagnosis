@@ -9,13 +9,18 @@
 
 ## 概要
 MicrosoftのAzureを用いたアプリケーション。
+
 好きな相手との相性がわかります。
 
 ## 環境
-Ruby 2.3.3
-Ruby on Rails 5.0.6
-HTML
-CSS
-Azure Emotion API
+- Ruby 2.3.3
+
+- Ruby on Rails 5.0.6
+
+- HTML
+
+- CSS
+
+- Azure Emotion API
 
 
