@@ -16,7 +16,13 @@ html{
   background-image: url("/back.jpg");
   .display-3{
     margin: 0 auto;
-    // color: black !important;
+
+  }
+  input{
+    color: black !important;
+  }
+  .btn{
+    color: white !important;
   }
 
 }
